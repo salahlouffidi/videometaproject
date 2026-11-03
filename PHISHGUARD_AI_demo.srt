@@ -1,0 +1,204 @@
+1
+00:00:00,200 --> 00:00:04,632
+Every day, we meet links in social feeds,
+messages, and comments.
+
+2
+00:00:04,672 --> 00:00:08,016
+Some look familiar, yet point
+somewhere unexpected.
+
+3
+00:00:08,056 --> 00:00:11,489
+PHISHGUARD AI helps us pause,
+inspect the evidence,
+
+4
+00:00:11,529 --> 00:00:13,960
+and understand the risk before we click.
+
+5
+00:00:18,200 --> 00:00:22,433
+Imagine a fictional social post asking you
+to verify your account.
+
+6
+00:00:22,473 --> 00:00:26,527
+Its link contains the word Facebook, but
+that alone proves nothing.
+
+7
+00:00:26,567 --> 00:00:29,544
+The real question is which domain
+receives your visit,
+
+8
+00:00:29,584 --> 00:00:31,554
+and what warning signs appear.
+
+9
+00:00:36,200 --> 00:00:38,976
+Our planned flow begins with Analyze Page.
+
+10
+00:00:39,016 --> 00:00:44,166
+The extension collects links from the current page
+and sends them to a local backend.
+
+11
+00:00:44,206 --> 00:00:47,227
+URL checks identify structural signals,
+
+12
+00:00:47,267 --> 00:00:51,049
+then AI helps classify and explain
+the evidence.
+
+13
+00:00:54,200 --> 00:00:57,842
+Meta Model API provides the
+explanation layer.
+
+14
+00:00:57,882 --> 00:00:58,899
+For this project,
+
+15
+00:00:58,939 --> 00:01:05,119
+Muse Spark reads the supplied URL evidence and
+describes the risk in plain language.
+
+16
+00:01:05,159 --> 00:01:09,205
+It does not need to open the suspicious
+destination for this assessment.
+
+17
+00:01:12,200 --> 00:01:15,586
+Jev, from TypeSafe, provides a
+structured decision.
+
+18
+00:01:15,626 --> 00:01:16,844
+Instead of a paragraph,
+
+19
+00:01:16,884 --> 00:01:21,620
+it returns a category and probabilities that our
+software can use directly.
+
+20
+00:01:21,660 --> 00:01:26,796
+Meta explains the evidence; Jev gives us a
+machine-readable classification.
+
+21
+00:01:30,200 --> 00:01:33,093
+Here is our simulated social-feed scenario:
+
+22
+00:01:33,133 --> 00:01:36,901
+an account-verification post with a
+Facebook-like address.
+
+23
+00:01:36,941 --> 00:01:39,112
+This interface is an animation,
+
+24
+00:01:39,152 --> 00:01:42,595
+not a recording of a completed
+Facebook integration.
+
+25
+00:01:42,635 --> 00:01:46,784
+The reserved example domain represents a
+fictional destination.
+
+26
+00:01:48,200 --> 00:01:53,017
+The animated scan highlights three
+signals: an HTTP connection,
+
+27
+00:01:53,057 --> 00:01:58,252
+a brand name on an unrelated domain, and login
+or verification wording.
+
+28
+00:01:58,292 --> 00:02:00,457
+These signals justify caution.
+
+29
+00:02:00,497 --> 00:02:04,059
+They do not establish what a real
+destination contains.
+
+30
+00:02:06,200 --> 00:02:10,349
+We tested this fictional URL directly
+with both APIs.
+
+31
+00:02:10,389 --> 00:02:13,194
+Both returned HTTP two hundred.
+
+32
+00:02:13,234 --> 00:02:15,022
+Jev selected high risk,
+
+33
+00:02:15,062 --> 00:02:18,547
+with a high-category probability of
+ninety-two percent.
+
+34
+00:02:18,587 --> 00:02:23,190
+Meta also assessed high phishing risk and
+explained the domain and wording.
+
+35
+00:02:24,200 --> 00:02:28,422
+Today, the public website offers
+browser-local URL checks,
+
+36
+00:02:28,462 --> 00:02:32,339
+and separate live tests verify both
+API connections.
+
+37
+00:02:32,379 --> 00:02:35,331
+The extension and backend source
+are available.
+
+38
+00:02:35,371 --> 00:02:42,072
+Connecting the verified Jev format and both models into the
+complete app remains work in progress.
+
+39
+00:02:42,200 --> 00:02:44,271
+PHISHGUARD AI, LOUFFI Edition.
+
+40
+00:02:44,311 --> 00:02:46,930
+Transparent signals, structured decisions,
+
+41
+00:02:46,970 --> 00:02:49,453
+and explanations people can understand.
+
+42
+00:02:49,493 --> 00:02:51,784
+Explore the prototype and source code.
+
+43
+00:02:51,824 --> 00:02:52,948
+Our goal is simple:
+
+44
+00:02:52,988 --> 00:02:56,942
+help people make a more informed decision
+before trusting a link.
+
